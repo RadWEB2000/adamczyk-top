@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@import "./_base.css";
+@import "./_plugins.css";
+@import "./_reset.css";
+@import "./_utilities.css";
+@import "./_variables-breakpoints.css";
+@import "./_variables-colors.css";
+@import "./_variables-fonts.css";
+@import "./_variants.css";

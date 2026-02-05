@@ -1,0 +1,47 @@
+
+@theme inline {
+--color-woodsmoke-50: oklch(97.315% 0.00011 271.152);
+--color-woodsmoke-100: oklch(92.797% 0.00011 271.152);
+--color-woodsmoke-200: oklch(86.07% 0.0001 271.152);
+--color-woodsmoke-300: oklch(75.721% 0.00009 271.152);
+--color-woodsmoke-400: oklch(62.675% 0.00007 271.152);
+--color-woodsmoke-500: oklch(53.476% 0.00006 271.152);
+--color-woodsmoke-600: oklch(47.836% 0.00005 271.152);
+--color-woodsmoke-700: oklch(42.761% 0.00005 271.152);
+--color-woodsmoke-800: oklch(39.042% 0.00004 271.152);
+--color-woodsmoke-900: oklch(36.002% 0.00004 271.152);
+--color-woodsmoke-950: oklch(22.645% 0.00003 271.152);
+--color-punch-50: oklch(97.438% 0.01106 30.571);
+--color-punch-100: oklch(94.323% 0.02692 28.748);
+--color-punch-200: oklch(89.93% 0.05098 30.017);
+--color-punch-300: oklch(83.018% 0.0891 30.131);
+--color-punch-400: oklch(73.82% 0.14523 30.559);
+--color-punch-500: oklch(66.401% 0.18503 31.934);
+--color-punch-600: oklch(58.332% 0.19483 32.11);
+--color-punch-700: oklch(52.36% 0.17439 32.198);
+--color-punch-800: oklch(46.04% 0.14669 32.028);
+--color-punch-900: oklch(41.205% 0.11929 31.84);
+--color-punch-950: oklch(26.872% 0.07903 32.412);
+--color-international-orange-50: oklch(97.936% 0.01678 76.024);
+--color-international-orange-100: oklch(95.372% 0.03925 77.145);
+--color-international-orange-200: oklch(90.33% 0.07872 73.975);
+--color-international-orange-300: oklch(83.956% 0.12325 68.548);
+--color-international-orange-400: oklch(76.199% 0.16626 56.715);
+--color-international-orange-500: oklch(71.322% 0.19367 47.373);
+--color-international-orange-600: oklch(68.026% 0.21435 39.79);
+--color-international-orange-700: oklch(56.671% 0.18699 37.401);
+--color-international-orange-800: oklch(47.804% 0.15403 36.636);
+--color-international-orange-900: oklch(41.576% 0.1263 37.889);
+--color-international-orange-950: oklch(26.847% 0.08311 36.26);
+--color-correct:oklch(31.815% 0.05477 191.068);
+--color-wrong:oklch(52.363% 0.19996 26.346);
+
+
+}
+
+
+:root {
+    --gradient-orange:linear-gradient(to left bottom, var(--color-international-orange-600),var(--color-punch-800));
+--gradient-black:radial-gradient(at bottom, var(--color-neutral-950),var(--color-black));
+}
+

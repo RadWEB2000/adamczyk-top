@@ -1,0 +1,5 @@
+@theme {
+  --font-heading:var(--font-heading);
+  --font-subheading:var(--font-subheading);
+  --font-regular:var(--font-regular);
+}

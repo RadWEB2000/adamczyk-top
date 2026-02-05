@@ -1,0 +1,35 @@
+body {
+    background-color: color-mix(in srgb, var(--color-neutral-50) 35%, var(--color-white));
+    color:var(--color-woodsmoke-950);
+    font-family: var(--font-regular);
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+
+::selection {
+  background-color: var(--color-international-orange-500);
+  color: var(--color-woodsmoke-50);
+}
+
+header {
+  /* background-image: radial-gradient(at bottom, var(--color-neutral-950),var(--color-black)); */
+}
+
+.field-search {
+  @apply appearance-none;
+}
+
+.field-search::-webkit-search-cancel-button {
+  @apply hidden;
+}
+
+
+.field:-webkit-autofill,
+.field:-webkit-autofill:hover,
+.field:-webkit-autofill:focus,
+.field:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  -webkit-text-fill-color: theme(colors.neutral.900);
+  transition: background-color 9999s ease-in-out 0s;
+}

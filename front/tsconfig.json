@@ -1,0 +1,60 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react-jsx",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@/app/*":["./src/app/*"],
+      "@/assets/*":["./src/assets/*"],
+      "@/docs/*":["./src/assets/documents/*"],
+      "@/fonts/*":["./src/assets/fonts/*"],
+      "@/svg/*":["./src/assets/svg/*"],
+      "@/svgr/*":["./src/assets/svgr/*"],
+      "@/img/*":["./src/assets/images/*"],
+      "@/img/me/*":["./src/assets/images/me/*"],
+      "@/img/brand/*":["./src/assets/images/brand/*"],
+      "@/img/peoples/*":["./src/assets/images/peoples/*"],
+      "@/img/bg/*":["./src/assets/images/backgrounds/*"],
+      "@/movies/*":["./src/assets/movies/*"],
+      "@/components/*":["./src/components/*"],
+      "@/layout/*":["./src/components/layout/*"],
+      "@/utils/*":["./src/components/utils/*"],
+      "@/views/*":["./src/components/views/*"],
+      "@/context/*":["./src/context/*"],
+      "@/data/*":["./src/data/*"],
+      "@/lib/*":["./src/lib/*"],
+      "@/funcs/*":["./src/lib/functions/*"],
+      "@/configs/*":["./src/lib/configs/*"],
+      "@/hooks/*":["./src/lib/hooks/*"],
+      "@/provider/*":["./src/provider/*"],
+      "@/store/*":["./src/store/*"],
+      "@/css/*":["./src/styles/*"],
+      "@/ts/*":["./src/types/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts",
+    "**/*.mts"
+  ],
+  "exclude": ["node_modules"]
+}

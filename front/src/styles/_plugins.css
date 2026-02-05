@@ -1,0 +1,5 @@
+@import "@toolwind/anchors";
+@plugin "@tailwindcss/forms";
+@plugin "@tailwindcss/typography";
+@plugin "@toolwind/corner-shape";
+@plugin "@toolwind/tagged-combinators";
