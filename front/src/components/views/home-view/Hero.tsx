@@ -23,7 +23,7 @@ export default function Hero(){
                 className="order-3 text-xs leading-relaxed p-3 text-balance"
             ><strong className=""><span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione officiis sit harum ea dolores dolorum voluptas ducimus dicta reprehenderit. Nesciunt iure atque deserunt molestiae. Explicabo recusandae perferendis atque magnam! Similique.</span><span>Nemo, dolore! Facere distinctio, aliquam repellat aut nemo similique optio tenetur nostrum, quod, temporibus repudiandae. Dolorum commodi cupiditate quia, nam nemo fuga, fugiat ipsa temporibus voluptates facere repellendus iste similique!</span></strong></p>
             
-            <Image
+            {/* <Image
                 alt=""
                 className="grayscale-100 order-2 w-full bg-yellow-500"
                 src={img.src}
@@ -31,7 +31,7 @@ export default function Hero(){
                 height={725}
                 loading="eager"
                 priority
-            />
+            /> */}
         </header>
     )
 }

@@ -1,4 +1,4 @@
-import { Logo } from "@/assets/svgr";
+import {Brand, Menu, ProgressBar} from "@/layout/navigation";
 import type { T_Navigation } from "@/ts/navigation.types";
 
 export default function Navigation({isArticle}:T_Navigation){
@@ -6,27 +6,66 @@ export default function Navigation({isArticle}:T_Navigation){
         <>
             {
                 isArticle &&
-                <span
-                    className="h-1 bg-red-500 w-full block scale-x-0 origin-left fixed top-0 left-0 z-999"
-                />
+                <ProgressBar/>
             }
             <nav
-                className="flex items-center flex-row fixed z-9999 text-white min-h-16 bg-blue-400 w-full"
+                className="flex items-center flex-row fixed z-9999 text-white h-16 bg-blue-400 w-full px-6 justify-between"
             >
-                <Logo
-                    className="group hocus:rotate-95 hocus:scale-85 duration-200 ease-in-out transition-all fill-none bg-transparent h-10 w-10"
-                    tile_one="fill-neutral-300 group-hocus:fill-international-orange-300 duration-300 ease-in-out transition-all"
-                    tile_two="fill-neutral-600 group-hocus:fill-international-orange-600 duration-300 ease-in-out transition-all"
-                    tile_three="fill-neutral-900 group-hocus:fill-international-orange-900 duration-300 ease-in-out transition-all"
+                <Brand
+                    href="/"
+                    label="Adamczyk"
+                    lang="pl-PL"
                 />
-                <menu
-                    className="flex items-center flex-row"
-                >
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                </menu>
+                <Menu
+                    menu={[
+                        {
+                            href:'/',
+                            label:'Start'
+                        },
+                        {
+                            href:'/o-mnie',
+                            label:'O mnie',
+                        },
+                        {
+                            href:'/oferta',
+                            label:'Oferta',
+                            submenu:[
+                                {
+                                    href:'/oferta/pozycjonowanie-stron',
+                                    label:'Pozycjonowanie'
+                                },
+                                {
+                                    href:'/oferta/pozycjonowanie-ai',
+                                    label:'Pozycjonowanie AI'
+                                },
+                                {
+                                    href:'/oferta/strony-internetowe',
+                                    label:'Strony internetowe'
+                                },
+                                {
+                                    href:'/oferta/automatyzacje-rpa',
+                                    label:'Automatyzacje RPA'
+                                },
+                                {
+                                    href:'/oferta/reklamy-ppc',
+                                    label:'Reklamy PPC'
+                                },
+                            ]
+                        },
+                        {
+                            href:'/case-studies',
+                            label:'Case studies'
+                        },
+                        {
+                            href:'/blog',
+                            label:'Blog'
+                        },
+                        {
+                            href:'/kontakt',
+                            label:'Kontakt'
+                        }
+                     ]}
+                />
             </nav>
         </>
     )
