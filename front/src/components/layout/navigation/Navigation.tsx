@@ -54,7 +54,21 @@ export default function Navigation({isArticle}:T_Navigation){
                         },
                         {
                             href:'/case-studies',
-                            label:'Case studies'
+                            label:'Case studies',
+                            submenu: [
+                                {
+                                    href:'/case-studies#aplikacje',
+                                    label:'Aplikacje'
+                                },
+                                {
+                                    href:'/case-studies#realizacje',
+                                    label:'Realizacje'
+                                },
+                                {
+                                    href:'/case-studies#klienci',
+                                    label:'Klienci'
+                                },
+                            ]
                         },
                         {
                             href:'/blog',
